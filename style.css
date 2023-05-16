@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    padding: 80px;
+    box-shadow: 0px 0px 20px 0px rgb(2, 12, 12);
+    border: 1.5px solid rgb(15, 233, 233);
+}
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Name, .Password {
+    text-align: center;
+    border: 2px solid rgb(15, 233, 233);
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 48px;
+    width: 15rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.Name:focus, .Password:focus {
+    width: 300px;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+
+    0% {
+        border-color: rgb(15, 233, 233);
+    }
+
+    10% {
+        border-color: yellow;
+
+    }
+
+    20% {
+        border-color: rgb(5, 216, 160);
+    }
+
+    30% {
+        border-color: rgb(60, 0, 255);
+    }
+
+    40% {
+        border-color: purple;
+    }
+
+    50% {
+        border-color: yellow;
+
+    }
+
+    60% {
+        border-color: cyan;
+    }
+
+    70% {
+        border-color: skyblue;
+    }
+
+    80% {
+        border-color: pink;
+    }
+
+    90% {
+        border-color: rgb(247, 238, 238);
+    }
+
+    100% {
+        border-color: yellow;
+    }
+}
+
+.loginBtn {
+    background: transparent;
+    border: 2px solid rgb(16, 44, 16);
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(9, 226, 13);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.loginBtn:hover {
+    background: rgb(4, 136, 4);
+    border: 2px solid rgb(11, 66, 11);
+}
